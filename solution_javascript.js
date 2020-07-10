@@ -4,9 +4,11 @@ class EventSourcer {
   }
 
   add(num) {
-    return 2;
+    return num;
   }
-  subtract(num) {}
+  subtract(num) {
+    return
+  }
   undo() {}
   redo() {}
   bulk_undo(num) {}
