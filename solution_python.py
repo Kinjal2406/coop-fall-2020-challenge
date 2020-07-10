@@ -33,8 +33,10 @@ class EventSourcer():
         pass
 
     def bulk_undo(self, steps: int):
-        if(-2-steps+1 > 0):
+        if(steps<len(self.temp)):
             self.value =  self.temp[-2-(steps)+1]
+        if(steps==len(self.temp)):
+            self.value = 0
         pass
 
     def bulk_redo(self, steps: int):
